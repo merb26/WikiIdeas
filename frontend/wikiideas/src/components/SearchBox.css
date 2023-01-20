@@ -1,0 +1,31 @@
+body{
+    background-color: #EAE7B1;
+}
+.mainForm{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    display: -webkit-inline-flex;
+}
+.placeHolder{
+    margin: 10px;
+    border: none;
+    border-radius: 0.25rem;
+}
+.mb-2{
+    color:#3C6255;
+}
+.btn-search{
+    margin: 10px;
+    color: #EAE7B1;
+    background-color: #3C6255;
+    border: none;
+}
+.btn-search :hover{
+    color: #EAE7B1;
+    background-color: #3C6255;
+}
+
+

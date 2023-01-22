@@ -10,8 +10,19 @@ mongoose.connect(
   console.log('****Prueba MongoDB****');
 
   /* -------------------------------------------------------------------------- */
+  /*                                   Create                                   */
+  /* -------------------------------------------------------------------------- */
+  // const articleSave = {
+  //   title: 'Prueba MongoDB',
+  //   category: 'categoria',
+  //   body: 'escribiendo articulo',
+  // };
+
+  // new articlesDAO().save(articleSave);
+
+  /* -------------------------------------------------------------------------- */
   /*                                    Read                                    */
   /* -------------------------------------------------------------------------- */
-  const listArticles = await new articlesDAO().getAll();
-  console.log(listArticles);
+  // const listArticles = await new articlesDAO().getAll();
+  // console.log(listArticles);
 })();

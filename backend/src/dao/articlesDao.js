@@ -6,6 +6,11 @@ class articlesDAO {
 
     return listArticles;
   }
+
+  async save(article) {
+    const articleSave = new articles(article);
+    articleSave.save();
+  }
 }
 
 module.exports = articlesDAO;

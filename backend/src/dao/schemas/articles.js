@@ -5,7 +5,7 @@ mongoose.set('strictQuery', true);
 const collection = 'articles';
 
 const schema = mongoose.Schema({
-  name: {type: String},
+  title: {type: String},
   category: {type: String},
   body: {type: String},
 });

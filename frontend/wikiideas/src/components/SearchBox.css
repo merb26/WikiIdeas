@@ -6,11 +6,17 @@ body{
     display: flex;
     justify-content: center;
 }
+.label-search{
+    padding: 10px;   
+    color:#3C6255;
+    font-weight: bold;
+}
 .form-control{
     display: -webkit-inline-flex;
 }
 .placeHolder{
     margin: 10px;
+    padding: 10px;
     border: none;
     border-radius: 0.25rem;
 }
@@ -19,13 +25,11 @@ body{
 }
 .btn-search{
     margin: 10px;
+    padding: 10px;
     color: #EAE7B1;
     background-color: #3C6255;
     border: none;
-}
-.btn-search :hover{
-    color: #EAE7B1;
-    background-color: #3C6255;
+    border-radius: 0.25rem;
 }
 
 

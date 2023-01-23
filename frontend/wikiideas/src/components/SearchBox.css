@@ -1,20 +1,18 @@
-body{
-    background-color: #EAE7B1;
-}
-.mainForm{
-    margin-top: 60px;
+
+.searchForm{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
 }
 .label-search{
     padding: 10px;   
     color:#3C6255;
-    font-weight: bold;
-}
-.form-control{
-    display: -webkit-inline-flex;
+    text-decoration: underline;
 }
 .placeHolder{
+    width: 100%;
     margin: 10px;
     padding: 10px;
     border: none;

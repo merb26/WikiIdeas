@@ -12,9 +12,19 @@ class articlesService {
     return articles;
   }
   async save(articleSave) {
-    const result = await dao.save(articleSave);
+    const {title, category, body} = articleSave;
 
-    return result;
+    if (!title) {
+      return {message: 'El campo título está vacío'};
+    } else if (!category) {
+      return {message: 'El campo categoría está vacío'};
+    } else if (!body) {
+      return {message: 'El campo contenido está vacío'};
+    }
+
+    const article = await dao.save(articleSave);
+
+    return {message: 'Ha creado el tema con éxito', article};
   }
   async update(articleReplace) {
     const result = await dao.update(articleReplace);

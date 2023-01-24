@@ -1,0 +1,11 @@
+.mainSection{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 20px;
+    grid-gap: 60px; 
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+# GET http://localhost:5050/articles HTTP/1.1
+# content-type: application/json
+
+DELETE http://localhost:5050/articles HTTP/1.1
+content-type: application/json
+
+{
+    "id": "63cf4b1be3a6a80f75cd6645"
+}
+
+# POST http://localhost:5050/articles HTTP/1.1
+# content-type: application/json
+
+# {
+#     "title": "63cd264cd59f6742cf1ce5e7",
+#     "category": "aqui va categoria",
+#     "body": "escribiendo contenido del tema"
+# }

@@ -9,12 +9,21 @@ class articlesDAO {
 
   async save(article) {
     const articleSave = new articles(article);
-    await articleSave.save();
+    return await articleSave.save();
+  }
+
+  async update(article) {
+    const {id, title, category, body} = article;
+
+    return await articles.updateOne({id}, {$set: {title, category, body}});
   }
 
   async delete(_id) {
-    console.log('id: ', _id);
-    await articles.deleteOne({_id});
+    try {
+      return await articles.deleteOne({_id});
+    } catch (error) {
+      return {error};
+    }
   }
 }
 

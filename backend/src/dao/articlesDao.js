@@ -15,7 +15,14 @@ class articlesDAO {
   async update(article) {
     const {id, title, category, body} = article;
 
-    return await articles.updateOne({id}, {$set: {title, category, body}});
+    try {
+      return await articles.updateOne(
+        {_id: id},
+        {$set: {title, category, body}}
+      );
+    } catch (error) {
+      return {error};
+    }
   }
 
   async delete(_id) {

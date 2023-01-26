@@ -1,6 +1,6 @@
 
-# GET http://localhost:5050/articles HTTP/1.1
-# content-type: application/json
+GET http://localhost:5050/articles HTTP/1.1
+content-type: application/json
 
 # DELETE http://localhost:5050/articles HTTP/1.1
 # content-type: application/json
@@ -13,7 +13,26 @@
 # content-type: application/json
 
 # {
-#     "title": "Dragon ball",
+#     "title": "Prueba",
 #     "category": "Anime",
 #     "body": "Prueba"
+# }
+
+# POST http://localhost:5050/articles/update HTTP/1.1
+# content-type: application/json
+
+# {
+#     "id": "63d084e79abacce6ee312221",
+#     "title": "One Punch",
+#     "category": "Anime",
+#     "body": "historia del anime"
+# }
+
+
+# {
+#   "acknowledged": true,
+#   "modifiedCount": 1,
+#   "upsertedId": null,
+#   "upsertedCount": 0,
+#   "matchedCount": 1
 # }

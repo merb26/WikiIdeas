@@ -29,7 +29,16 @@ class articlesService {
   async update(articleReplace) {
     const result = await dao.update(articleReplace);
 
-    return result;
+    if (result.modifiedCount == 1) {
+      return {message: 'El tema se modificó con éxito', isUpdated: 1};
+    }
+    {
+      const isNotUpdated = {
+        ...result,
+        isUpdated: 0,
+      };
+      return isNotUpdated;
+    }
   }
   async deleteById(id) {
     const result = await dao.delete(id);

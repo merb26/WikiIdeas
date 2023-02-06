@@ -3,3 +3,14 @@
     display: flex;
     margin-right: 10px;
 }
+.card.Title{
+    color: #61876E;
+}
+.card-Text{
+    color: #A6BB8D;
+}
+.btn-notice{
+    background-color:#EAE7B1;
+    border: none;
+    cursor: pointer;
+}
